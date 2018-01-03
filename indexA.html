@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Ashif Qureshi">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Samruddhi</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="js/socialbars.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="css/styleA.css">
+    <style>
+        .cycle-slideshow {
+            width: 100%;
+        }
+        #map {
+            width: 700px;
+            height: 240px;
+        }
+
+    </style>
+    <!-- get jQuery from the google apis -->
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>-->
+    <!-- CSS STYLE-->
+    <!--<link rel="stylesheet" type="text/css" href="css/stylee.css" media="screen"/>-->
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <!--<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>-->
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <!--<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen"/>-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(12.9328577, 77.622989),
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({map:map, position:new google.maps.LatLng(12.9328577, 77.622989)});
+            var infoWindow = new google.maps.InfoWindow({content:"<b>Samrruddhi Healing Center & Institute for Drugless</b>" +
+                    "<br/># 15, 80 Feet Road,1st Floor,  Koramangala 1st Block<br/> Bangalore-560034" });
+            google.maps.event.addListener(marker, "click", function () {
+                infoWindow.open(map, marker);
+            });
+            infoWindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body class="bodybg">
+<section id="menu" class="navbar navbar-inverse second_bar" style="display: none;">
+    <div class="second_log float_left">
+                <a href="indexA.html"><img src="images/sam_logo.png" width="90px" height="53px"/></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <article class="span12">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about-purvi.html">Purvi Jayaaraaj</a></li>
+                                <li><a href="about-samruddhi.html">About Samruddhi</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="service.html">Services<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Hypnotherapy</a></li>
+                                <li><a href="#">Past Life Therapy</a></li>
+                                <li><a href="#">Chakra Balancing</a></li>
+                                <li><a href="#">Ikiden Reiki</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="photo.html">Photo</a></li>
+                                <li><a href="video.html">Video</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="grattitude.html">Gratitude</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="ext_link">
+    <div class="ext_link">
+        <div class="ext-icons">
+            <a href="#"><i class="fa fa-pinterest-p fa-2x"></i></a>
+            <a href="#"><i  class="fa fa-linkedin fa-2x"></i></a>
+            <a href="#"><i  class="fa fa-youtube fa-2x"></i></a>
+            <a href="#"> <i class="fa fa-facebook fa-2x"></i></a>
+        </div>
+    </div>
+</section>
+<header>
+    <div class="container top_header">
+        <div class="row">
+            <div class="col-md-3 pad">
+                    <a href="indexA.html"><img src="images/logo.png" width="100%"/></a>
+            </div>
+            <div class=" col-md-4 col-md-offset-5 pad">
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-pinterest-p fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                    <div class="below-social-icons">
+                        Reach Us +91 76769 06666
+                        <br>
+                        info@samrruddhi.in
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container navbar navbar-inverse">
+    <div class="row">
+        <article class="span12">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about-purvi.html">Purvi Jayaaraaj</a></li>
+                            <li><a href="about-samruddhi.html">About Samruddhi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="service.html">Services<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Hypnotherapy</a></li>
+                            <li><a href="#">Past Life Therapy</a></li>
+                            <li><a href="#">Chakra Balancing</a></li>
+                            <li><a href="#">Ikiden Reiki</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="photo.html">Photo</a></li>
+                            <li><a href="video.html">Video</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="grattitude.html">Gratitude</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <article class="span12 slider">
+            <div class="banner_wrap">
+                <div class="cycle-slideshow banner_fakehover"   data-cycle-pager="#adv-custom-pager"
+                     data-cycle-pager-template="<div><img src='{{src}}' width=25 height=25></div>">
+                    <img src="images/banner1.jpg" style="width:100%; max-height:400px;">
+                    <img src="images/banner2.jpg" style="width:100%; max-height:400px;">
+                    <img src="images/banner3.jpg" style="width:100%; max-height:400px;">
+                    <!--<div class="cycle-pager banner_pag"></div>-->
+                </div>
+                <div id="adv-custom-pager" class="center external cycle-pager"></div>
+            </div>
+            <strong class="sh_left">
+                <img alt="" src="images/shadow.png">
+            </strong>
+            <strong class="sh_right">
+                <img alt="" src="images/shadow2.png">
+            </strong>
+        </article>
+    </div>
+</div>
+<section class="section">
+    <div class="container">
+        <div class="row full_row">
+            <article class="span12 thumb-pad0">
+                <div>
+                    <figure class="float_left">
+                        <img alt="" src="images/handhealing14.jpg">
+                    </figure>
+                    <div class="thumbnail float_right">
+                        <div class="caption">
+                            <h2>Welcome to Holistic Healing</h2>
+                            <hr>
+                            <p>
+                                We welcome you to Samrruddhi Healing Center and Institute for Drugless Therapy and to an
+                                intriguing and expansive world of exploring your own potential to heal mysterious physical, mental
+                                or Spiritual issues through your mind and soul power.
+
+                                Holistic Healing helps you tap into the hidden powers of your subconscious mind and know how to work
+                                with it and get what you want effectively and efficiently
+                            </p>
+                            <!--<a class="btn btn-primary btn2" href="#">more</a>-->
+                            <a class="btn btn-link float_right" href="#">
+                                <em></em>
+                                > read more...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 25px;">
+        <div class="row full_row">
+            <article class="span12 thumb-pad0">
+                <div>
+                    <div class="thumbnail float_left">
+                        <div class="caption">
+                            <h2 style="color: #AA1E69;">Kirlian Aura Photography</h2>
+                            <hr>
+                            <p>
+                                - Indicates the health of your aura
+                                <br>
+                                - Shows how Balanced your Chakras are
+                                <br>
+                                - Reveals present health status of all your organs
+                                <br>
+                                - Predicts probable future diseases
+                                <br>
+                            </p>
+                            <!--<a class="btn btn-primary btn2" href="#">more</a>-->
+                            <a class="btn btn-link float_right" href="#">
+                                <em></em>
+                                > read more...
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="float_right">
+                        <img alt="" src="images/kirlian.png">
+                    </figure>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="section-service">
+    <div class="container" style="padding-top: 25px;">
+        <div class="row">
+            <article class="span12">
+                <h2 style="color: #AA1E69;">
+                    Our Services
+                </h2>
+                <hr>
+            </article>
+            <article class="span12" style="margin: 1% 0;">
+                <div class="col-md-3">
+                    <div class="service-gallery">
+                        <img src="images/service-2.jpg" width="100%" alt="...">
+                    </div>
+                    <div class="service-gallery">
+                        <h4>Hypnotherapy</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-gallery">
+                        <img src="images/service-3.jpg" width="100%" alt="...">
+                    </div>
+                    <div class="service-gallery">
+                        <h4>Past Life therapy</h4>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="service-gallery">
+                        <img src="images/service-1.jpg" width="100%" alt="...">
+                    </div>
+                    <div class="service-gallery">
+                        <h4>Chakra Balancing</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-gallery">
+                        <img src="images/service-4.jpg" width="100%" alt="...">
+                    </div>
+                    <div class="service-gallery">
+                        <h4>ikiden Reiki</h4>
+                    </div>
+                </div>
+            </article>
+            <article class="span12">
+                <a class="btn btn-primary btn2 float_right" href="#">More Information</a>
+            </article>
+
+            <!--<a class="btn btn-link float_right" href="#">
+                <em></em>
+                > read more...
+            </a>-->
+        </div>
+    </div>
+</section>
+<section class="section_media">
+    <div class="container">
+        <div class="row">
+            <article class="span12">
+                <h2 style="color: #AA1E69;">
+                    Watch Popular Shows on Drugless Therapy
+                </h2>
+                <hr>
+            </article>
+            <article class="span12" style="margin: 1% 0;">
+                <article class="col-md-4 thumb-pad0">
+                    <div>
+                        <div class="frame">
+                            <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ahhwFzEb2oY"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4>Vasudeva Bhat</h4>
+                                <hr>
+                                <p>I was suffering from frequent epileptic attacks with strange feelings of hallucinations and
+                                    negative thoughts, because of which I was not able to concentrate on my studies or lead a
+                                    peaceful life.
+                                </p>
+                                <a class="btn btn-link float_right" href="#">
+                                    <em></em>
+                                    > read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 thumb-pad0">
+                    <div>
+                        <div class="frame">
+                            <iframe width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/3JapUeVy9Fw"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4>Nimma Doctor Holistic</h4>
+                                <hr>
+                                <p>Internationally renowned Holistic Healer, Alternative Medicine Practitioner/Drugless Therapist,
+                                    Hypnotherapist Reiki Grand Master Mrs Purvi Jayaaraaj is a Revolutionist in creating
+                                    massive awareness.
+                                </p>
+                                <a class="btn btn-link float_right" href="#">
+                                    <em></em>
+                                    > read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 thumb-pad0">
+                    <div>
+                        <div class="frame">
+                            <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ahhwFzEb2oY"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h4>Vasudeva Bhat</h4>
+                                <hr>
+                                <p>I was suffering from frequent epileptic attacks with strange feelings of hallucinations and
+                                    negative thoughts, because of which I was not able to concentrate on my studies or lead a
+                                    peaceful life.
+                                </p>
+                                <a class="btn btn-link float_right" href="#">
+                                    <em></em>
+                                    > read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </article>
+            <article class="span12">
+                <a class="btn btn-primary btn2 float_right" href="#">More Videos</a>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="section_media" style="padding-bottom: 45px;">
+    <div class="container">
+        <div class="row full_row">
+            <article class="span12 thumb-pad0">
+                <div>
+                    <div class="frame float_left">
+                        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ahhwFzEb2oY"
+                                frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="thumbnail float_right">
+                        <div class="caption">
+                            <h2>Testimonial</h2>
+                            <hr>
+                            <p>
+                                "I was suffering from frequent epileptic attacks with strange feelings of hallucinations and negative
+                                thoughts, because of which I was not able to concentrate on my studies or lead a peaceful life. I am
+                                extremely thankful to Samrruddhi and Purvi Madam for offering me help at the right time. I have
+                                completely come out of my issues now and my performance in studies have improved many folds."
+                            </p>
+                            <!--<a class="btn btn-primary btn2" href="#">more</a>-->
+                            <a class="btn btn-link float_right" href="#">
+                                <em></em>
+                                > read more...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="section_media" style="padding-top: 20px;padding-bottom: 25px;">
+    <div class="container">
+        <div class="row">
+            <article class="span12 thumb-pad0">
+                <div>
+                    <div class="thumbnail float_left">
+                        <div class="caption">
+                            <h4>Reach Us</h4>
+                            <hr>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email-id">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="text" placeholder="Enter Your Phone No.">
+                                </div>
+                                <div class="form-group">
+                                    <textarea rows="4" cols="50" class="form-control" placeholder="Your Message..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn2" value="Submit">
+                                    <input type="reset" class="btn btn-primary btn2" value="Reset">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="thumbnail float_right office-address">
+                        <div class="caption">
+                            <h4>Office Address</h4>
+                            <hr>
+                            <div id="map"></div>
+                            <p>
+                                <i class="fa fa-map-marker"></i>
+                                # 15, 80 Feet Road, 1st Floor, Koramangala 1st Block,
+                                Bangalore - 560 034
+                                <br>
+                                <span style="color:red;">["Meeting Strictly with Prior Appointment ONLY"] </span>
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                +91 76760 06666
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope-o"></i> info@samrruddhi.in
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="span12" style="text-align: center">
+                    Copyright @2015 Samruddhi, All Rights Reserved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Top arrow HTML and JS start -->
+<script type="text/javascript">
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+    var amountScrolled = 180;
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > amountScrolled) {
+            $('a.back-to-top').fadeIn('slow');
+            if(!$(".second_bar").is(':visible')){
+                $(".second_bar").slideDown(1000);
+            }
+            if(!$(".ext_link").is(':visible')){
+                $(".ext_link").slideDown(1000);
+            }
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+            $(".second_bar").slideUp('slow');
+            $(".ext_link").slideUp('slow');
+        }
+    });
+    function toggleExtLink(direction1){
+        var effect = 'slide';
+        var options = { direction: "right" };
+        var duration = 700;
+        $(".ext_link").toggle(effect, options, duration);
+    }
+
+</script>
+<!-- Top arrow HTML and JS end -->
+</body>
+</html>

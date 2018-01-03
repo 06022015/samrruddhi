@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/ticker.css">
+    <link rel="stylesheet" href="css/modern.ticker.new.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin-ext">
+    <script src="js/jquery.ticker.js"></script>
+    <script src="js/jquery.modern.ticker.js"></script>
+    <script type="text/javascript">
+
+        $(window).load(function(e) {
+
+        $("#bn1").breakingNews({
+            effect		:"slide-hr",
+            autoplay	:true,
+            timer		:3000,
+            color		:"turquoise",
+            border		:true
+        });
+        });
+    </script>
+    <style>
+        body{padding:0; margin:0; font-family:'PT Sans'; font-size:16px; background:#f8f8f8}
+        header{width:100%; padding:50px 0; text-align:center; color:#FFF;}
+        header h1{ font-size:48px;}
+        header a{color:#FFF; text-decoration:none; display:inline-block; padding:5px 10px; border:solid 1px #FFF;}
+        header a:hover{border-color:#c30;}
+        header a.active{background:#FFF; color:#333;}
+    </style>
+</head>
+<body>
+<h1>Responsive News Ticker</h1>
+<section style="margin-top:50px">
+    <div style="width:100%; max-width:960px; margin:0 auto; padding:0 20px 50px 20px; box-sizing:border-box;">
+        <div class="breakingNews" id="bn1">
+            <div class="bn-title"><h2>News From CNN</h2><span></span></div>
+            <ul>
+                <li><a href="#">Mauris interdum elit non sapien imperdiet, ac dapibus mi maximus</a></li>
+                <li><a href="#">Nullam sit amet nisl ex</a></li>
+                <li><a href="#">Cras lorem augue, facilisis a commodo in, facilisis finibus libero vel ultrices.</a></li>
+                <li><a href="#">Maecenas imperdiet ante vitae neque facilisis cursus</a></li>
+                <li><a href="#">Maecenas libero ipsum, placerat in mattis vel, tincidunt quis est.</a></li>
+                <li><a href="#">Curabitur tortor libero, vehicula sagittis luctus sed, lobortis sed arcu</a></li>
+            </ul>
+            <div class="bn-navi">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+   <h2>Mmodern ticker</h2>
+
+
+    <div class="ticker modern-ticker" id="ticker">
+        <div class="mt-body" >
+            <div class="mt-label"><h2>NEWS:</h2><span></span></div>
+            <div class="mt-news">
+                <ul style="">
+                    <li><a target="_self" href="#">News 2 news 2 news 2 news 2 news 2 news 2 news 2 news 2 news 2 news 2
+                        news 2 news 2 news 2</a></li>
+                    <li><a target="_self" href="#">News 3 news 3 news 3 news 3 news 3 news 3 news 3 news 3 news 3 news 3
+                        news 3 news 3 news 3</a></li>
+                    <li><a target="_self" href="#">News 4 news 4 news 4 news 4 news 4 news 4 news 4 news 4 news 4 news 4
+                        news 4 news 4 news 4</a></li>
+                    <li><a target="_self" href="#">News 5 news 5 news 5 news 5 news 5 news 5 news 5 news 5 news 5 news 5
+                        news 5 news 5 news 5</a></li>
+                    <li><a target="_self" href="#">News 1 news 1 news 1 news 1 news 1 news 1 news 1 news 1 news 1 news 1
+                        news 1 news 1 news 1</a></li>
+                </ul>
+            </div>
+            <div class="mt-controls">
+                <div class="mt-prev"></div>
+                <div class="mt-next"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<div class="ticker1 modern-ticker mt-scroll">
+        <div class="mt-body">
+            <div class="mt-label">NEWS:</div>
+            <div class="mt-news" style="left: 74px; width: 730px;">
+                <ul style="width: 3520px; margin-left: -108px;">
+                    <li><a target="_self" href="#">News 2 news 2 news 2 news 2 news 2 news 2 news 2 news 2 news 2 news 2
+                        news 2 news 2 news 2</a></li>
+                    <li><a target="_self" href="#">News 3 news 3 news 3 news 3 news 3 news 3 news 3 news 3 news 3 news 3
+                        news 3 news 3 news 3</a></li>
+                    <li><a target="_self" href="#">News 4 news 4 news 4 news 4 news 4 news 4 news 4 news 4 news 4 news 4
+                        news 4 news 4 news 4</a></li>
+                    <li><a target="_self" href="#">News 5 news 5 news 5 news 5 news 5 news 5 news 5 news 5 news 5 news 5
+                        news 5 news 5 news 5</a></li>
+                    <li><a target="_self" href="#">News 1 news 1 news 1 news 1 news 1 news 1 news 1 news 1 news 1 news 1
+                        news 1 news 1 news 1</a></li>
+                </ul>
+            </div>
+            <div class="mt-controls">
+                <div class="mt-prev"></div>
+                <div class="mt-play mt-pause"></div>
+                <div class="mt-next"></div>
+            </div>
+        </div>
+    </div>-->
+</section>
+<script type="text/javascript">
+    $(function () {
+        $("#ticker").modernTicker({effect:"scroll", scrollType:"continuous", scrollStart:"inside", scrollInterval:20, transitionTime:500, autoplay:true});
+        $(".ticker2").modernTicker({effect:"fade", displayTime:4e3, transitionTime:300, autoplay:true});
+        $(".ticker3").modernTicker({effect:"type", typeInterval:10, displayTime:4e3, transitionTime:300, autoplay:true});
+        $(".ticker4").modernTicker({effect:"slide", slideDistance:100, displayTime:4e3, transitionTime:350, autoplay:true})
+    })
+</script>
+</body>
+</html>
